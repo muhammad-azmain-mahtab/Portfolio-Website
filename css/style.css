@@ -1,7 +1,45 @@
-footer{
+footer {
     background-color: black;
 }
-.contact-bg{
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#scrollToTopBtn.show {
+    display: block;
+}
+
+
+.box {
+    width: auto;
+    background-color: #24292f;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.box:hover {
+    box-shadow: 0px 8px 12px rgba(220, 53, 69, 0.2);
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    padding: 0px;
+}
+
+.contact-bg {
     background: grey;
     border-radius: 10px;
     padding-top: 20px;
@@ -20,28 +58,57 @@ footer{
     transform: translateX(0);
 }
 
-.hero:nth-child(2){
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show1 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hero:nth-child(2) {
     transition-delay: 200ms;
 }
 
-.about:nth-child(2){
+.about:nth-child(2) {
     transition-delay: 200ms;
 }
 
-.skill:nth-child(2){
+.skill:nth-child(2) {
     transition-delay: 200ms;
 }
-.skill:nth-child(3){
+
+.skill:nth-child(3) {
     transition-delay: 400ms;
 }
-.skill:nth-child(4){
+
+.skill:nth-child(4) {
     transition-delay: 600ms;
 }
 
-.portfolio:nth-child(2){
+.skill:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.skill:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+.portfolio:nth-child(2) {
     transition-delay: 200ms;
 }
-.portfolio:nth-child(3){
+
+.portfolio:nth-child(3) {
     transition-delay: 400ms;
 }
 
+.custom-input {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0.5rem;
+}
