@@ -16,6 +16,34 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const moreInfoButtons = document.querySelectorAll('.more-info-button');
+
+    moreInfoButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const portfolioItem = this.closest('.portfolio');
+            const image = portfolioItem.querySelector('img');
+            const textOverlay = portfolioItem.querySelector('.text-overlay');
+
+            if (image.style.opacity === '0.5') {
+                // Revert changes
+                image.style.opacity = '1';
+                if (textOverlay) {
+                    textOverlay.style.opacity = '0';
+                }
+            } else {
+                // Apply changes
+                image.style.opacity = '0.5';
+                if (textOverlay) {
+                    textOverlay.style.opacity = '1';
+                }
+            }
+        });
+    });
+});
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
