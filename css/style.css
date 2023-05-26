@@ -36,7 +36,7 @@ body {
     transform: scale(1.2);
 }
 
-.box:hover h6 {
+.box:hover span {
     display: none;
 }
 
@@ -148,4 +148,8 @@ body {
 
 /* .portfolio:hover .text-overlay {
     opacity: 1;
+}
+
+.portfolio:hover .card-img-top {
+    opacity: 0.5;
 } */
