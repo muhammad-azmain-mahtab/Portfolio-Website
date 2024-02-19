@@ -1,7 +1,7 @@
 # Portfolio-Website
 **Best Viewed on Chrome/Edge/Firefox for intended viewing experience.
 
-azmaino7.github.io/Portfolio-Website/
+[Live Website](https://azmaino7.github.io/Portfolio-Website/)
 
 ## Key Features
 ### 1. Scroll Animations
