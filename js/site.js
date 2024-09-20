@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     moreInfoButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
 
             const portfolioItem = this.closest('.portfolio');
             const image = portfolioItem.querySelector('img');
@@ -50,10 +50,12 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
             entry.target.classList.add('show1');
-        } else {
-            entry.target.classList.remove('show');
-            entry.target.classList.remove('show1');
         }
+        // to repeat animations
+        // else {
+        //     entry.target.classList.remove('show');
+        //     entry.target.classList.remove('show1');
+        // }
     });
 });
 
